@@ -11,6 +11,36 @@
     <link rel="stylesheet" href="/build/css/app.css">
 </head>
 <body>
-    
+    <header class="header contenedor">
+        <div class="header__logo">
+            <img src="./build/img/logo.svg" alt="Logo de App Delivery">
+        </div>
+        <nav class="navegacion">
+            <a href="#" class="navegacion__link">Iniciar Sesión</a>
+            <a href="#" class="navegacion__link">Crear Cuenta</a>
+            <a href="#" class="navegacion__link navegacion__link--registrar">Registrar Restaurant</a>
+        </nav>
+    </header>
+    <section class="contenedor formulario">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2 class="formulario__heading">Encuentra comida en tu Restaurante favorito</h2>
+                <form class="formulario__bucar">
+                    <div class="formulario__campo">
+                        <label for="restaurant" class="formulario__label">Restaurant</label>
+                        <input id="restaurant" type="text" class="formulario__input" placeholder="Tacos Mexico">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="platillo" class="formulario__label">Platillo</label>
+                        <input id="platillo" type="text" class="formulario__input" placeholder="Pizza, Ensalada, Hamburguesa">
+                    </div>
+                    <input type="submit" value="Buscar" class="formulario__submit">
+                </form>
+            </div>
+            <div class="formulario__imagen--contenedor">
+                <img class="formulario__imagen" src="./build/img/dibujo_repartidor.svg" alt="imagen repartidor">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
